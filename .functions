@@ -92,8 +92,6 @@ function unidecode() {
 	echo # newline
 }
 
-
-
 # Launch installed browsers for a specific URL
 # Usage: browsers "http://www.google.com"
 function browsers(){
