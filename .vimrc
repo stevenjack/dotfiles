@@ -5,6 +5,7 @@ set shiftwidth=4
 set expandtab
 set incsearch
 set nu
+set formatoptions+=rco
 
 if has("multi_byte")
  if &termencoding == ""
