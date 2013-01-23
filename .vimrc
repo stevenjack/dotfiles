@@ -18,3 +18,5 @@ endif
 syntax enable
 set background=dark
 colorscheme solarized
+
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
