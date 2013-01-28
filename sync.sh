@@ -14,4 +14,12 @@ else
 	fi
 fi
 unset doIt
+
+    echo 'Please enter git user.name: '
+    read gituser
+    git config --global user.name "$gituser"
+    echo 'Please enter git user.email:'
+    read gitemail
+    git config --global user.email "$gitemail"
+
 source ~/.bash_profile
