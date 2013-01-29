@@ -8,6 +8,7 @@
 	df = diff --color --color-words --abbrev
 	log = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
     br = branch -av
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [color]
 	ui = always
 [apply]
