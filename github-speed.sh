@@ -9,6 +9,7 @@ then
     echo "Killing github ssh process with id: $pid"
     kill -9 $pid
     rm -rf $lockFile
+    echo "done"
 else
 
     echo "Starting long lived connection to github..." 
