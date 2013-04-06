@@ -19,4 +19,5 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
+filetype plugin on
+filetype plugin indent on
