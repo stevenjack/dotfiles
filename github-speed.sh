@@ -1,7 +1,7 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 
-lockFile="githubspeed.pid"
+lockFile="/tmp/githubspeed.pid"
 
 if [ -f "$lockFile" ]
 then
