@@ -26,3 +26,12 @@ autocmd FocusLost * :set number
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 autocmd CursorMoved * :set relativenumber
+
+"Vundle setup
+set rtp+=$HOME/.vim/bundle/vundle
+call vundle#rc()
+Bundle 'gmarik/vundle'
+filetype plugin indent on
+
+"Bundles
+Bundle 'kien/ctrlp.vim'
