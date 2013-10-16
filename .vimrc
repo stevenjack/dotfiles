@@ -35,3 +35,4 @@ filetype plugin indent on
 
 "Bundles
 Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-fugitive'
