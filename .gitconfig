@@ -1,22 +1,23 @@
 [alias]
-    co = checkout
-	c = commit -am
-	up = pull
-	p = push
-	s = status -s
-    st = status
-	df = diff --color --color-words --abbrev
-	log = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-    br = branch -av
-    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-    po = push origin
-    pom = push origin master
-    pod = push origin develop
-    pos = push origin staging
-    plom = pull origin master
-    plod = pull origin develop
-    plos = pull origin staging
-    m = merge --no-ff
+  co = checkout
+  c = commit -am
+  up = pull
+  p = push
+  s = status -s
+  st = status
+  df = diff --color --color-words --abbrev
+  log = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  br = branch -av
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  po = push origin
+  pom = push origin master
+  pod = push origin develop
+  pos = push origin staging
+  plom = pull origin master
+  plod = pull origin develop
+  plos = pull origin staging
+  m = merge --no-ff
+  edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; $EDITOR `f`"
 [color]
 	ui = always
 [apply]

@@ -36,3 +36,13 @@ filetype plugin indent on
 "Bundles
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
+
+"Automatically remove trailing whitespace
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd FileType php,ruby autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()

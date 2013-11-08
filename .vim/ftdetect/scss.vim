@@ -1,1 +1,2 @@
-au BufRead,BufNewFile *.scss	set filetype=scss
+" Scss
+autocmd BufNewFile,BufRead *.scss set filetype=css
