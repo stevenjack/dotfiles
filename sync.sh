@@ -2,6 +2,8 @@
 cd "$(dirname "$0")"
 git pull
 function doIt() {
+    git submodule init
+    git submodule update
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "README.md" -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
