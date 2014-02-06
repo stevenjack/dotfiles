@@ -53,9 +53,6 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " Surround text with HTML or punctuation
 Bundle 'tpope/vim-surround'
 
-" Surround text with HTML or punctuation
-Bundle 'tpope/vim-surround'
-
 " Tabularize
 Bundle 'godlygeek/tabular'
 map <Leader>e :Tabularize /=<cr>
